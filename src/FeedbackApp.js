@@ -6,7 +6,6 @@ class FeedbackApp extends Component {
     render() {
         return (
             <View>
-                <Text> FeedbackApp </Text>
                 <LoginPage />
             </View>
         );
