@@ -1,15 +1,18 @@
 import React, { Component } from 'react';
-import { StyleSheet } from 'react-native';
-import LoginPage from './screens';
+import { StyleSheet, Text, View } from 'react-native';
+import LoginPage from './screens/LoginPage';
 
-class TodoApp extends Component {
+class FeedbackApp extends Component {
     render() {
         return (
-            <LoginPage />
+            <View>
+                <Text> FeedbackApp </Text>
+                <LoginPage />
+            </View>
         );
     }
 }
-export default TodoApp;
+export default FeedbackApp;
 
 const styles = StyleSheet.create({
     container: {
