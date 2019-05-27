@@ -1,20 +1,15 @@
 import React, { Component } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import LoginPage from './screens/LoginPage';
+import LoginPage from './screens/LoginScreen';
 
 class FeedbackApp extends Component {
     render() {
+        //this.props.navigation.push('Login') ??
         return (
             <View>
-                <LoginPage />
+                <Text> this is the home FeedbackApp</Text>
             </View>
         );
     }
 }
 export default FeedbackApp;
-
-const styles = StyleSheet.create({
-    container: {
-        flex: 1
-    }
-});

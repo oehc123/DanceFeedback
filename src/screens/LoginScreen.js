@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { StyleSheet, Text, View, Dimensions, TextInput, TouchableOpacity } from 'react-native';
-import { white } from 'ansi-colors';
+import { createStackNavigator, createAppContainer } from 'react-navigation';
 
 var widthDim = Dimensions.get('window').width; //full width
 var heightDim = Dimensions.get('window').height; //full height
 
-class LoginPage extends Component {
+class LoginScreen extends Component {
     render() {
         return (
             <View>
@@ -35,7 +35,7 @@ class LoginPage extends Component {
 
                     <View style={styles.textInput}>
                         <TouchableOpacity style={styles.button}
-                            //onPress={this.onPress}
+                            onPress={() => this.props.navigation.push('InsturctorMain')}
                         >
                             <Text style={{color: 'white', fontWeight: 'bold' }}> LogIn </Text>
                         </TouchableOpacity>
@@ -57,7 +57,7 @@ class LoginPage extends Component {
         );
     }
 }
-export default LoginPage;
+export default LoginScreen;
 
 const styles = StyleSheet.create({
     purpleTop: {
