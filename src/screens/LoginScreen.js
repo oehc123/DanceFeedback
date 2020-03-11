@@ -7,6 +7,9 @@ var widthDim = Dimensions.get('window').width; //full width
 var heightDim = Dimensions.get('window').height; //full height
 
 class LoginScreen extends Component {
+    static navigationOptions = {
+        headerShown: false,
+      };
     
     render() {
         return (
