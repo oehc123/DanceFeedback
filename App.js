@@ -1,7 +1,8 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import FeedbackApp from './src/FeedbackApp';
-import { createStackNavigator, createAppContainer } from 'react-navigation';
+import { createAppContainer } from 'react-navigation';
+import { createStackNavigator } from 'react-navigation-stack';
 import LoginPage from './src/screens/LoginScreen';
 import InsturctorMainScreen from './src/screens/InstructorMainScreen'
 

@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import { StyleSheet, Text, View, Dimensions, TextInput, TouchableOpacity } from 'react-native';
-import { createStackNavigator, createAppContainer } from 'react-navigation';
+import { createAppContainer } from 'react-navigation';
+import { createStackNavigator } from 'react-navigation-stack';
 
 var widthDim = Dimensions.get('window').width; //full width
 var heightDim = Dimensions.get('window').height; //full height
 
 class LoginScreen extends Component {
+    
     render() {
         return (
             <View>
